@@ -1,0 +1,18 @@
+====== create maktabd45 and add ali to sudo and maktab45 =====
+sudo groupadd maktab45
+sudo useradd ali
+sudo passwd ali
+sudo usermod -a -G sudo ali
+sudo usermod -a -G maktab45 ali
+
+
+===== create tst.sh and change permision =====
+sudo su ali
+touch tst.sh
+chmod 700 tst.sh
+./tst.sh
+
+
+===== search and install linux-headers =====
+sudo apt search linux-headers
+sudo apt install linux-headers-5.8.0-43-generic
